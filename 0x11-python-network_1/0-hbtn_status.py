@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 
-"""A script that
+"""
+A script that
 - fetches https://alx-intranet.hbtn.io/status.
 - uses urlib package
 """
-
-
 if __name__ == '__main__':
     import urllib.request
+    """
+    urlib request model is used to open URL
+    """
 
 with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as resp:
     content = resp.read()
